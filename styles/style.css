@@ -1,0 +1,28 @@
+textarea {
+    width: 50%;
+    height: 130px;
+    display: block;
+    margin: 300px auto 20px;
+}
+
+button {
+    display: block;
+    width: 300px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: white;
+    background-color: orangered;
+    border: 1px solid orangered;
+}
+
+button:hover {
+    background-color: rgb(226, 64, 5);
+}
+
+#common {
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 70%;
+    height: 100%;
+}
