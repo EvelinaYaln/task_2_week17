@@ -1,13 +1,13 @@
 let comments = [];
 addComment = () => {
     let comment = document.querySelector('#writeComment').value;
-    comments.push(comment);
-    generateComments();
 
     function checkSpam(a) {
-        a.replace(/viagra/gi, '***');
+        return a.replace(/viagra/gi, '***').replace(/XXX/gi, '***')
     }
-    checkSpam(comment);
+    let censorship = checkSpam(comment);
+    comments.push(censorship);
+    generateComments();
     document.querySelector('#writeComment').value = '';
 }
 
